@@ -1,7 +1,24 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import styled from "styled-components";
+import React from 'react';
+import styled, { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: "Lato";
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    line-height: 1.7;
+    background-color: #000;
+  }
+  
+`;
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -12,8 +29,8 @@ const Title = styled.h1`
 function App() {
   return (
     <div className="App">
+      <GlobalStyle />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -26,6 +43,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <main>asd</main>
+      <footer>asd</footer>
     </div>
   );
 }
