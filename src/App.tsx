@@ -2,8 +2,18 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import Header from './components/Header';
 import Content from './components/Content';
+import Footer from './components/Footer';
 
 const GlobalStyle = createGlobalStyle`
+  :root{
+  --color-primary: #00adb5;
+  --color-primary-dark: #222831;
+  --color-primary-dark-light: #393e46;
+  --color-primary-pale: #eeeeee;
+  --bg-color: #eee;
+  --btn-font-size: 18px;
+}
+
   *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
   
   html {
     font-size: 62.5%;
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
     text-rendering: optimizeLegibility;
   }
   body {
@@ -24,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: 80vh 160vh 30vh;
+  grid-template-rows: 80vh 160vh 20vh;
 `;
 
 function App() {
@@ -33,7 +43,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <Content />
-      <footer>asd</footer>
+      <Footer />
     </Container>
   );
 }
