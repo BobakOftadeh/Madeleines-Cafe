@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   --color-primary-dark: #222831;
   --color-primary-dark-light: #393e46;
   --color-primary-pale: #eeeeee;
-  --bg-color: #eee;
+  --color-black: #000000;
   --btn-font-size: 18px;
 }
 
@@ -27,14 +27,14 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     line-height: 1.7;
-    background-color: #000;
+    background-color: var(--color-primary-pale);
   }
   
 `;
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: 80vh 160vh 20vh;
+  grid-template-rows: 75vh 220vh 20vh;
 `;
 
 function App() {

@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const ContentWrapper = styled.div`
   display: grid;
-  grid-template-rows: 60vh 60vh 40vh;
+  grid-template-rows: 120vh 60vh 40vh;
 `;
 
 const Content = () => {

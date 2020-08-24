@@ -8,7 +8,7 @@ const HeaderWrapper = styled.div`
   .container {
     display: flex;
     flex-direction: column;
-    margin: 2rem 20rem;
+    margin: 2rem 15vw;
     height: 70vh;
     justify-content: center;
 
@@ -20,7 +20,7 @@ const HeaderWrapper = styled.div`
   .title {
     position: absolute;
     margin-top: 5rem;
-    margin-left: 20rem;
+    margin-left: 15vw;
   }
 
   h1 {
