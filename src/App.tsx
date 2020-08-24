@@ -1,5 +1,7 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
+import Header from './components/Header';
+import Content from './components/Content';
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -20,32 +22,19 @@ const GlobalStyle = createGlobalStyle`
   
 `;
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
+const Container = styled.div`
+  display: grid;
+  grid-template-rows: 80vh 160vh 30vh;
 `;
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <GlobalStyle />
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <main>asd</main>
+      <Header />
+      <Content />
       <footer>asd</footer>
-    </div>
+    </Container>
   );
 }
 
