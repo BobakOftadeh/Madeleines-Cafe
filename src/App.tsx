@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: 75vh 220vh 20vh;
+  grid-template-rows: 75vh 210vh 20vh;
 `;
 
 function App() {

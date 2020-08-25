@@ -9,8 +9,10 @@ const HighlightsWrapper = styled.section`
   align-items: center;
 
   .photo {
-    width: 20rem;
-    margin-right: 5rem;
+    width: 100%;
+    max-width: 12rem;
+    margin-right: 3rem;
+    height: auto;
   }
 
   h2 {
@@ -23,32 +25,44 @@ const HighlightsWrapper = styled.section`
   h3 {
     display: inline-block;
     font-size: 1.5rem;
-    width: 25rem;
+    font-weight: 300;
+    width: 32rem;
   }
 
   h4 {
     font-size: 1.5rem;
   }
 
-  h6 {
+  p {
     width: 30rem;
     font-size: 1.2rem;
     font-weight: 400;
   }
 
   .Highlight-Food-contianer {
-    display: inline-flex;
+    display: flex;
+
+    &:not(:last-child) {
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--color-primary-pale);
+    }
   }
 
   .Highlight-contianer {
-    width: 20%;
+    display: inline-block;
+  }
+
+  .Highlight-title-container {
+    margin-right: 40rem;
+    margin-bottom: 14rem;
   }
 `;
 
 const Highlights = () => {
   return (
     <HighlightsWrapper>
-      <div>
+      <div className="Highlight-title-container">
         <h2>A few highlights from our menu</h2>
         <h3>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
@@ -64,10 +78,10 @@ const Highlights = () => {
           />
           <span>
             <h4>Coffee</h4>
-            <h6>
+            <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
               incidunt, assumenda impedit.
-            </h6>
+            </p>
           </span>
         </div>
         <div className="Highlight-Food-contianer">
@@ -78,10 +92,10 @@ const Highlights = () => {
           />
           <span>
             <h4>Coffee</h4>
-            <h6>
+            <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
               incidunt, assumenda impedit.
-            </h6>
+            </p>
           </span>
         </div>
         <div className="Highlight-Food-contianer">
@@ -92,10 +106,10 @@ const Highlights = () => {
           />
           <span>
             <h4>Coffee</h4>
-            <h6>
+            <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
               incidunt, assumenda impedit.
-            </h6>
+            </p>
           </span>
         </div>
       </div>
