@@ -9,7 +9,6 @@ const AboutWrapper = styled.section`
 
   .photo {
     display: block;
-    height: 100%;
     box-shadow: 0 1.5rem 4rem rgba(var(--color-black), 0.4);
     width: 20%;
   }
@@ -34,12 +33,12 @@ const AboutWrapper = styled.section`
 
   h2 {
     font-size: 3.5rem;
-    line-height: 5rem;
+    line-height: 3.6rem;
     width: 30rem;
+    margin-bottom: 1rem;
   }
 
-  h3 {
-    display: inline-block;
+  p {
     font-size: 1.5rem;
     width: 25rem;
   }
@@ -56,21 +55,21 @@ const About = () => {
         />
         <div>
           <h2>Enjoyable place for all the family</h2>
-          <h3>
+          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
             repellat praesentium optio incidunt sed molestiae dolore sint
             maiores
-          </h3>
+          </p>
         </div>
       </div>
       <div className="about-resturant">
         <div>
           <h2>The most locally sourced food</h2>
-          <h3>
+          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
             repellat praesentium optio incidunt sed molestiae dolore sint
             maiores
-          </h3>
+          </p>
         </div>
         <img
           src={require('../../images/cafe3.jpg')}
