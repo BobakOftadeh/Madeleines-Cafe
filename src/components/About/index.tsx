@@ -10,7 +10,9 @@ const AboutWrapper = styled.section`
   .photo {
     display: block;
     box-shadow: 0 1.5rem 4rem rgba(var(--color-black), 0.4);
-    width: 20%;
+    width: 100%;
+    max-width: 40rem;
+    z-index: 998;
   }
 
   .about-food {

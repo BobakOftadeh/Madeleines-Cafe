@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const FooterWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   background-color: var(--color-primary-dark);
   color: white;
@@ -14,6 +14,11 @@ const FooterWrapper = styled.div`
 
   h3 {
     font-size: 1.5rem;
+  }
+
+  & > h1,
+  & > div {
+    flex: 0 0 30%;
   }
 `;
 
