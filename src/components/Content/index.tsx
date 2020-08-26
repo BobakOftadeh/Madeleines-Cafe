@@ -4,7 +4,7 @@ import Highlights from '../../components/Highlights';
 import Reservation from '../../components/Reservation';
 import styled from 'styled-components';
 
-const ContentWrapper = styled.div`
+const ContentWrapper = styled.main`
   display: grid;
   grid-template-rows: 120vh 60vh 30vh;
 `;

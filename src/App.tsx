@@ -1,8 +1,8 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import Header from './components/Header';
-import Content from './components/Content';
-import Footer from './components/Footer';
+import { createGlobalStyle } from 'styled-components';
+import { Router } from '@reach/router';
+import Home from './pages/Home';
+import Booking from './pages/Booking';
 
 const GlobalStyle = createGlobalStyle`
   :root{
@@ -32,19 +32,15 @@ const GlobalStyle = createGlobalStyle`
   
 `;
 
-const Container = styled.div`
-  display: grid;
-  grid-template-rows: 75vh 210vh 20vh;
-`;
-
 function App() {
   return (
-    <Container>
+    <div>
       <GlobalStyle />
-      <Header />
-      <Content />
-      <Footer />
-    </Container>
+      <Router>
+        <Home path="/" />
+        <Booking path="booking" />
+      </Router>
+    </div>
   );
 }
 

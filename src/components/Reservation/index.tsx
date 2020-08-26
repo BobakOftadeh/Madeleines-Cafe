@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from '@reach/router';
 import Button from '../Button';
 import ReservationBg from '../../images/cafe2.jpg';
 
@@ -21,13 +22,36 @@ const ReservationsWrapper = styled.section`
     margin-left: -8%;
     margin-right: 21%;
   }
+
+  a {
+    padding: 1rem 0;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    height: 5rem;
+    width: 20rem;
+    border: 0.2rem solid white;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      transform: translateY(0px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  }
 `;
 
 const Reservations: React.FC = () => {
   return (
     <ReservationsWrapper>
       <h3>Ready to make a Reservation?</h3>
-      <Button />
+      <Link to="booking">Book A Table</Link>
     </ReservationsWrapper>
   );
 };

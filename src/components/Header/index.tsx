@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from '@reach/router';
 
-const HeaderWrapper = styled.div`
+const HeaderWrapper = styled.header`
   background-color: var(--color-primary-dark);
   color: white;
 
@@ -29,18 +30,33 @@ const HeaderWrapper = styled.div`
     line-break: 1rem;
     width: 40rem;
   }
-  h3 {
+  p {
     display: inline-block;
     font-size: 1.5rem;
     width: 25rem;
   }
-  button {
-    background-color: transparent;
+
+  a {
+    padding: 1rem 0;
+    text-decoration: none;
     color: white;
+    text-align: center;
+    font-size: 1.5rem;
     border-radius: 1rem;
     height: 5rem;
     width: 20rem;
     border: 0.2rem solid white;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      transform: translateY(0px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
   }
 `;
 
@@ -50,11 +66,11 @@ const Header = () => {
       <h1 className="title">dine</h1>
       <div className="container">
         <h1>Exquisite dinning since 1994</h1>
-        <h3>
+        <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
           repellat praesentium optio incidunt sed molestiae dolore sint maiores
-        </h3>
-        <button>Book A Table</button>
+        </p>
+        <Link to="booking">Book A Table</Link>
       </div>
     </HeaderWrapper>
   );
