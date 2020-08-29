@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Router, RouteComponentProps, Link } from '@reach/router';
+import { RouteComponentProps, Link } from '@reach/router';
 import Header from '../../components/Header';
 import Content from '../../components/Content';
 import Footer from '../../components/Footer';
