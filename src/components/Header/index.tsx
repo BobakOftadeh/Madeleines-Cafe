@@ -60,20 +60,17 @@ const HeaderWrapper = styled.header`
   }
 `;
 
-const Header = () => {
-  return (
-    <HeaderWrapper>
-      <h1 className="title">dine</h1>
-      <div className="container">
-        <h1>Exquisite dinning since 1994</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-          repellat praesentium optio incidunt sed molestiae dolore sint maiores
-        </p>
-        <Link to="booking">Book A Table</Link>
-      </div>
-    </HeaderWrapper>
-  );
+interface MyProps {
+  children?: React.ReactNode;
+  type?: string;
+}
+
+const Header: React.FC<MyProps> = (props) => {
+  if (props.type === '1') {
+    return <HeaderWrapper>{props.children}</HeaderWrapper>;
+  } else {
+    return <header>{props.children}</header>;
+  }
 };
 
 export default Header;

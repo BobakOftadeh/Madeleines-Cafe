@@ -18,7 +18,7 @@ const FooterWrapper = styled.footer`
 
   & > h1,
   & > div {
-    flex: 0 0 30%;
+    flex: 0 0 28%;
   }
 `;
 
