@@ -8,6 +8,7 @@ const BookingContainer = styled.div`
   display: grid;
   grid-template-rows: 65vh 35vh 20vh;
   margin: 0;
+
   .clear-main {
     background-color: var(--color-primary-pale);
   }
@@ -21,18 +22,49 @@ const BookingContainer = styled.div`
 
   header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     color: white;
     background-color: var(--color-primary-dark);
+
+    & > * {
+      flex: 0 0 29%;
+      width: 100%;
+    }
   }
 
   h2 {
     line-height: 1rem;
   }
 
+  p {
+    font-size: 1.8rem;
+    word-wrap: break-word;
+    width: 85%;
+  }
+
+  .title {
+    position: relative;
+    top: 10%;
+    margin-bottom: 20%;
+  }
+
+  .Header-container {
+    flex: 0;
+  }
+
+  .Header-container-description {
+    margin-bottom: 20%;
+  }
+
+  .Header-container-description-h1 {
+    font-size: 6.4rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+  }
+
   .Header-form {
-    padding: 3rem;
+    padding: 4rem 3rem;
     position: relative;
     top: 40%;
     width: 30%;
@@ -49,6 +81,7 @@ const BookingContainer = styled.div`
   }
 
   button {
+    outline: none;
     border: none;
   }
 
@@ -122,6 +155,7 @@ const BookingContainer = styled.div`
     text-decoration: none;
     color: black;
     text-align: center;
+    font-family: inherit;
     font-size: 1.5rem;
     border-radius: 1rem;
     height: 5rem;
@@ -132,6 +166,9 @@ const BookingContainer = styled.div`
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      background-color: black;
+      color: white;
+      border: 0.2rem solid white;
     }
 
     &:active {
@@ -139,6 +176,9 @@ const BookingContainer = styled.div`
       transform: translateY(0px);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     }
+  }
+
+  .form-select {
   }
 `;
 
@@ -160,10 +200,10 @@ const Booking: React.FC<RouteComponentProps> = () => {
   return (
     <BookingContainer>
       <Header>
-        <div>
+        <div className="Header-container">
           <h1 className="title">dine</h1>
-          <div className="container">
-            <h2>Exquisite dinning since 1994</h2>
+          <div className="Header-container-description">
+            <h1 className="Header-container-description-h1">Reservations</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
               repellat praesentium optio incidunt sed molestiae dolore sint

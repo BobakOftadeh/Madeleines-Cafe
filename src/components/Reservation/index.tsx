@@ -16,15 +16,19 @@ const ReservationsWrapper = styled.section`
   justify-content: center;
   align-items: center;
 
+  > * {
+    margin: 0 10rem;
+  }
+
   h3 {
     color: white;
+    text-align: center;
     font-size: 4rem;
-    margin-left: -8%;
-    margin-right: 21%;
   }
 
   a {
     padding: 1rem 0;
+    display: inline-block;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -51,7 +55,9 @@ const Reservations: React.FC = () => {
   return (
     <ReservationsWrapper>
       <h3>Ready to make a Reservation?</h3>
-      <Link to="booking">Book A Table</Link>
+      <div>
+        <Link to="booking">Book A Table</Link>
+      </div>
     </ReservationsWrapper>
   );
 };
