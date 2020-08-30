@@ -3,8 +3,12 @@ import styled from 'styled-components';
 import { Link } from '@reach/router';
 
 const HeaderWrapper = styled.header`
-  background-color: var(--color-primary-dark);
   color: white;
+  position: relative;
+  background-image: linear-gradient(
+    rgba(34, 40, 49, 0.7),
+    rgba(34, 40, 49, 0.7)
+  );
 
   .container {
     display: flex;
@@ -15,6 +19,21 @@ const HeaderWrapper = styled.header`
 
     & > :not(:last-child) {
       margin-bottom: 2rem;
+    }
+  }
+
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+    > * {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
 

@@ -4,6 +4,7 @@ import { RouteComponentProps, Link } from '@reach/router';
 import Header from '../../components/Header';
 import Content from '../../components/Content';
 import Footer from '../../components/Footer';
+import cafeVideo from '../../images/cafeVideo1.mp4';
 
 const HomeContainer = styled.div`
   display: grid;
@@ -14,6 +15,10 @@ const Home: React.FC<RouteComponentProps> = (props) => {
   return (
     <HomeContainer>
       <Header type="1">
+        <video className="bg-video" autoPlay muted loop>
+          <source src={cafeVideo} type="video/mp4"></source>
+          Your browser does not support the video tag.
+        </video>
         <h1 className="title">dine</h1>
         <div className="container">
           <h1>Exquisite dinning since 1994</h1>
