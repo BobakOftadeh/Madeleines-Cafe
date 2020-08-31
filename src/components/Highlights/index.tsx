@@ -8,6 +8,10 @@ const HighlightsWrapper = styled.section`
   justify-content: center;
   align-items: center;
 
+  > * {
+    margin: 0 8rem;
+  }
+
   .photo {
     width: 100%;
     max-width: 12rem;
@@ -16,16 +20,16 @@ const HighlightsWrapper = styled.section`
   }
 
   h2 {
-    font-size: 3.5rem;
-    line-height: 3.6rem;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.6rem;
     width: 30rem;
     margin-bottom: 1rem;
   }
 
   h3 {
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    width: 40rem;
     width: 32rem;
   }
 
@@ -36,7 +40,11 @@ const HighlightsWrapper = styled.section`
   p {
     width: 30rem;
     font-size: 1.2rem;
-    font-weight: 400;
+  }
+
+  .Highlight-title-container-p {
+    font-size: 1.8rem;
+    width: 40rem;
   }
 
   .Highlight-Food-contianer {
@@ -54,7 +62,6 @@ const HighlightsWrapper = styled.section`
   }
 
   .Highlight-title-container {
-    margin-right: 40rem;
     margin-bottom: 14rem;
   }
 `;
@@ -64,10 +71,10 @@ const Highlights = () => {
     <HighlightsWrapper>
       <div className="Highlight-title-container">
         <h2>A few highlights from our menu</h2>
-        <h3>
+        <p className="Highlight-title-container-p">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
           repellat praesentium optio incidunt sed molestiae dolore sint maiores
-        </h3>
+        </p>
       </div>
       <div className="Highlight-contianer">
         <div className="Highlight-Food-contianer">

@@ -8,7 +8,7 @@ import cafeVideo from '../../images/cafeVideo1.mp4';
 
 const HomeContainer = styled.div`
   display: grid;
-  grid-template-rows: 75vh 210vh 20vh;
+  grid-template-rows: 75vh 270vh 20vh;
 `;
 
 const Home: React.FC<RouteComponentProps> = (props) => {
@@ -19,9 +19,9 @@ const Home: React.FC<RouteComponentProps> = (props) => {
           <source src={cafeVideo} type="video/mp4"></source>
           Your browser does not support the video tag.
         </video>
-        <h1 className="title">dine</h1>
         <div className="container">
-          <h1>Exquisite dinning since 1994</h1>
+          <h1 className="title">Madeleine's</h1>
+          <h1>Exquisite dining since 1994</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
             repellat praesentium optio incidunt sed molestiae dolore sint

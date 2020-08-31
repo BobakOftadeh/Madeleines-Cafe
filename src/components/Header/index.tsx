@@ -13,13 +13,9 @@ const HeaderWrapper = styled.header`
   .container {
     display: flex;
     flex-direction: column;
-    margin: 2rem 15vw;
-    height: 70vh;
+    margin-left: 25rem;
+    height: 100%;
     justify-content: center;
-
-    & > :not(:last-child) {
-      margin-bottom: 2rem;
-    }
   }
 
   .bg-video {
@@ -29,43 +25,47 @@ const HeaderWrapper = styled.header`
     width: 100%;
     z-index: -1;
     overflow: hidden;
+    object-fit: cover;
 
     > * {
       height: 100%;
       width: 100%;
-      object-fit: cover;
     }
   }
 
   .title {
-    position: absolute;
-    margin-top: 5rem;
-    margin-left: 15vw;
+    margin-bottom: 11rem;
+    font-weight: 400;
   }
 
   h1 {
     display: inline-block;
-    font-size: 4rem;
-    line-break: 1rem;
-    width: 40rem;
+    font-size: 6.4rem;
+    font-weight: 300;
+    width: 50rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
   }
+
   p {
     display: inline-block;
-    font-size: 1.5rem;
-    width: 25rem;
+    font-size: 1.8rem;
+    width: 40rem;
+    margin-bottom: 3rem;
   }
 
   a {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     border-radius: 1rem;
-    height: 5rem;
-    width: 20rem;
+    height: 6rem;
+    width: 22rem;
     border: 0.2rem solid white;
     transition: all 0.2s;
+    margin-bottom: 13rem;
 
     &:hover {
       transform: translateY(-2px);

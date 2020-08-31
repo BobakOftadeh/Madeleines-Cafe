@@ -11,7 +11,8 @@ const AboutWrapper = styled.section`
     display: block;
     box-shadow: 0 1.5rem 4rem rgba(var(--color-black), 0.4);
     width: 100%;
-    max-width: 40rem;
+    max-width: 50rem;
+    box-shadow: rgba(56, 66, 85, 0.5) 0px 75px 100px -50px;
     z-index: 998;
   }
 
@@ -19,8 +20,9 @@ const AboutWrapper = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    & img {
-      margin-right: 45rem;
+
+    > * {
+      margin: 0 8rem;
     }
   }
 
@@ -28,21 +30,23 @@ const AboutWrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    & img {
-      margin-left: 45rem;
+
+    > * {
+      margin: 0 6rem;
     }
   }
 
   h2 {
-    font-size: 3.5rem;
-    line-height: 3.6rem;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.6rem;
     width: 30rem;
     margin-bottom: 1rem;
   }
 
   p {
-    font-size: 1.5rem;
-    width: 25rem;
+    font-size: 1.8rem;
+    width: 40rem;
   }
 `;
 

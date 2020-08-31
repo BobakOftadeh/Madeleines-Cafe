@@ -15,9 +15,10 @@ const BookingContainer = styled.div`
 
   h1 {
     display: inline-block;
-    font-size: 4rem;
-    line-break: 1rem;
-    width: 40rem;
+    font-size: 6.4rem;
+    font-weight: 300;
+    width: 50rem;
+    line-height: 6rem;
   }
 
   header {
@@ -41,12 +42,12 @@ const BookingContainer = styled.div`
     font-size: 1.8rem;
     word-wrap: break-word;
     width: 85%;
+    margin-bottom: 20rem;
   }
 
   .title {
-    position: relative;
-    top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 11rem;
+    font-weight: 400;
   }
 
   .Header-container {
@@ -201,7 +202,7 @@ const Booking: React.FC<RouteComponentProps> = () => {
     <BookingContainer>
       <Header>
         <div className="Header-container">
-          <h1 className="title">dine</h1>
+          <h1 className="title">Madeleine's</h1>
           <div className="Header-container-description">
             <h1 className="Header-container-description-h1">Reservations</h1>
             <p>
