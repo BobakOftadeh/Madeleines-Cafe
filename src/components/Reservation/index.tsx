@@ -17,7 +17,7 @@ const ReservationsWrapper = styled.section`
   align-items: center;
 
   > * {
-    margin: 0 10rem;
+    margin: 0 15rem;
   }
 
   h3 {
