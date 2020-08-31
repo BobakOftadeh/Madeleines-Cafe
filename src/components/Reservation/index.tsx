@@ -12,18 +12,18 @@ const ReservationsWrapper = styled.section`
     url(${ReservationBg});
   background-position: center;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  > * {
-    margin: 0 15rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(43rem, 55rem));
+  place-content: center;
+  place-items: center;
 
   h3 {
     color: white;
     text-align: center;
     font-size: 4rem;
+  }
+
+  div {
   }
 
   a {
