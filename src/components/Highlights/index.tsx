@@ -4,13 +4,9 @@ import styled from 'styled-components';
 const HighlightsWrapper = styled.section`
   background-color: var(--color-primary-dark);
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  > * {
-    margin: 0 8rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(43rem, 55rem));
+  place-content: center;
 
   .photo {
     width: 100%;

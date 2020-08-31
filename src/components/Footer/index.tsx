@@ -9,7 +9,8 @@ const FooterWrapper = styled.footer`
   color: white;
 
   h1 {
-    font-size: 4rem;
+    font-size: 6.4rem;
+    font-weight: 400;
   }
 
   h3 {
@@ -25,7 +26,7 @@ const FooterWrapper = styled.footer`
 const Footer = () => {
   return (
     <FooterWrapper>
-      <h1>dine</h1>
+      <h1>Madeleine's</h1>
       <div>
         <h3>MARTHWAITE, SEDBERGH</h3>
         <h3>CUMBRIA</h3>

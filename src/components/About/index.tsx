@@ -20,6 +20,7 @@ const AboutWrapper = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     > * {
       margin: 0 8rem;
@@ -30,9 +31,10 @@ const AboutWrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
     > * {
-      margin: 0 6rem;
+      margin: 0 8rem;
     }
   }
 
