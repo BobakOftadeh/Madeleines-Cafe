@@ -10,6 +10,7 @@ const BookingContainer = styled.div`
   display: grid;
   grid-template-rows: 65vh 35vh 20vh;
   margin: 0;
+  position: relative;
 
   .bg-video {
     top: -30rem;
@@ -41,6 +42,7 @@ const Booking: React.FC<RouteComponentProps> = () => {
             maiores
           </p>
         </div>
+        <Form />
       </Header>
       <div className="clear-main"></div>
       <Footer />

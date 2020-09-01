@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 const FormWarpper = styled.form`
   padding: 4rem 3rem;
-  position: relative;
-  top: 40%;
-  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  width: 50rem;
   font-size: 2rem;
   color: #111111;
   display: flex;
@@ -26,7 +27,7 @@ const FormWarpper = styled.form`
     border: none;
     padding: 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    margin-bottom: 2%;
+    margin-bottom: 2rem;
     background-color: inherit;
     transition: all 1s;
     font-size: inherit;
@@ -50,6 +51,8 @@ const FormWarpper = styled.form`
     align-items: center;
     border-bottom: 1px solid black;
     padding: 1rem;
+    padding-top: 0;
+    margin-bottom: 3rem;
 
     button {
       flex: 0 0 8%;
