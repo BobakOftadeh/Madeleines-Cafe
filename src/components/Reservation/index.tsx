@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from '@reach/router';
-import Button from '../Button';
 import ReservationBg from '../../images/cafe2.jpg';
 
 const ReservationsWrapper = styled.section`

@@ -4,6 +4,7 @@ import { RouteComponentProps, Link } from '@reach/router';
 import Header from '../../components/Header';
 import Content from '../../components/Content';
 import Footer from '../../components/Footer';
+import Logo from '../../components/Logo';
 import cafeVideo from '../../images/cafeVideo1.mp4';
 
 const HomeContainer = styled.div`
@@ -26,7 +27,7 @@ const Home: React.FC<RouteComponentProps> = (props) => {
           </video>
         </div>
         <div className="container">
-          <h1 className="title">Madeleine's Cafe</h1>
+          <Logo />
           <h2>Exquisite dining since 1994</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae

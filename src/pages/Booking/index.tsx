@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Router, RouteComponentProps, Link } from '@reach/router';
 import Header from '../../components/Header';
+import Logo from '../../components/Logo';
 import Form from '../../components/Form';
 import Footer from '../../components/Footer';
 import cafeVideo2 from '../../images/cafeVideo2.mp4';
@@ -39,7 +40,7 @@ const Booking: React.FC<RouteComponentProps> = () => {
           </video>
         </div>
         <div className="container div-booking">
-          <h1 className="title">Madeleine's Cafe</h1>
+          <Logo />
           <h2>Reservations</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae

@@ -13,7 +13,7 @@ const HeaderWrapper = styled.header`
   .container {
     display: flex;
     flex-direction: column;
-    margin-left: 25rem;
+    margin-left: 15%;
     height: 100%;
     justify-content: center;
 
@@ -39,23 +39,6 @@ const HeaderWrapper = styled.header`
     }
   }
 
-  .title {
-    margin-bottom: 11rem;
-    font-weight: 400;
-    @media only screen and (max-width: 1000px) {
-      margin-bottom: 3rem;
-    }
-  }
-
-  h1 {
-    display: inline-block;
-    font-size: 6.4rem;
-    font-weight: 300;
-    width: 50rem;
-    line-height: 6rem;
-    margin-bottom: 2rem;
-  }
-
   h2 {
     font-size: 6.4rem;
     font-weight: 300;
@@ -65,6 +48,9 @@ const HeaderWrapper = styled.header`
 
     @media only screen and (max-width: 1000px) {
       width: auto;
+    }
+    @media only screen and (max-width: 650px) {
+      text-align: center;
     }
   }
 
@@ -77,6 +63,10 @@ const HeaderWrapper = styled.header`
     @media only screen and (max-width: 1000px) {
       text-align: center;
     }
+  }
+
+  .logo-wrapper {
+    margin-bottom: 11rem;
   }
 
   a {
