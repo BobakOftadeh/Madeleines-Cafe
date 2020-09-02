@@ -18,7 +18,7 @@ const ReservationsWrapper = styled.section`
   place-content: center;
   place-items: center;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
     grid-gap: 4rem;
   }
 

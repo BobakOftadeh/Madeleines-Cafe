@@ -15,7 +15,7 @@ const AboutWrapper = styled.section`
     box-shadow: rgba(56, 66, 85, 0.5) 0px 75px 100px -50px;
     z-index: 998;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
       max-width: 40rem;
       order: -1;
       margin-bottom: 5rem !important;
@@ -32,8 +32,12 @@ const AboutWrapper = styled.section`
       margin: 0 9rem;
     }
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
       text-align: center;
+      flex-direction: column;
+      > * {
+        margin: 0;
+      }
     }
   }
 
@@ -46,6 +50,14 @@ const AboutWrapper = styled.section`
     > * {
       margin: 0 9rem;
     }
+
+    @media only screen and (max-width: 1200px) {
+      text-align: center;
+      flex-direction: column;
+      > * {
+        margin: 0;
+      }
+    }
   }
 
   h2 {
@@ -54,6 +66,10 @@ const AboutWrapper = styled.section`
     line-height: 4.6rem;
     width: 30rem;
     margin-bottom: 1rem;
+
+    @media only screen and (max-width: 1200px) {
+      width: 43rem;
+    }
   }
 
   p {

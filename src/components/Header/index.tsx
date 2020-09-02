@@ -17,7 +17,7 @@ const HeaderWrapper = styled.header`
     height: 100%;
     justify-content: center;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
       align-items: center;
       margin-left: 2rem;
     }
@@ -42,6 +42,9 @@ const HeaderWrapper = styled.header`
   .title {
     margin-bottom: 11rem;
     font-weight: 400;
+    @media only screen and (max-width: 1000px) {
+      margin-bottom: 3rem;
+    }
   }
 
   h1 {
@@ -60,7 +63,7 @@ const HeaderWrapper = styled.header`
     line-height: 6rem;
     margin-bottom: 2rem;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
       width: auto;
     }
   }
@@ -71,7 +74,7 @@ const HeaderWrapper = styled.header`
     width: 40rem;
     margin-bottom: 3rem;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
       text-align: center;
     }
   }
@@ -97,6 +100,10 @@ const HeaderWrapper = styled.header`
     &:active {
       transform: translateY(0px);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    @media only screen and (max-width: 1000px) {
+      margin-bottom: 0;
     }
   }
 `;

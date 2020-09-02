@@ -9,6 +9,13 @@ import cafeVideo2 from '../../images/cafeVideo2.mp4';
 const BookingContainer = styled.div`
   display: grid;
   grid-template-rows: 65vh 35vh 20vh;
+  @media only screen and (max-width: 1300px) {
+    grid-template-rows: 65vh 35vh 50vh;
+  }
+
+  @media only screen and (max-width: 500px) {
+    grid-template-rows: 65vh 35vh 60vh;
+  }
   margin: 0;
   position: relative;
 
@@ -33,7 +40,7 @@ const Booking: React.FC<RouteComponentProps> = () => {
         </div>
         <div className="container div-booking">
           <h1 className="title">Madeleine's Cafe</h1>
-          <h1>Reservations</h1>
+          <h2>Reservations</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
             repellat praesentium optio incidunt sed molestiae dolore sint

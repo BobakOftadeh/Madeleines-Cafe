@@ -10,13 +10,23 @@ const FooterWrapper = styled.footer`
   grid-template-columns: repeat(auto-fit, minmax(43rem, max-content));
   grid-gap: 11rem;
 
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: auto;
+    grid-gap: 5rem;
+
+    & > div {
+      text-align: center;
+    }
+  }
+
   h1 {
     font-size: 6.4rem;
     font-weight: 400;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 400;
   }
 `;
 

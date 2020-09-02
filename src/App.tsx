@@ -25,13 +25,20 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Lato", sans-serif;
     text-rendering: optimizeLegibility;
 
+    
+    @media only screen and (max-width: 1600px){
+      font-size: 55%;
+    }
+
     @media only screen and (max-width: 1300px){
+      font-size: 52%;
+    }
+
+    @media only screen and (max-width: 1000px){
       font-size: 50%;
     }
 
-    @media only screen and (max-width: 900px){
-      font-size: 50%;
-    }
+   
   }
   body {
     line-height: 1.7;

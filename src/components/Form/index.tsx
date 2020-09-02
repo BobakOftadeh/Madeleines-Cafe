@@ -14,6 +14,16 @@ const FormWarpper = styled.form`
   background-color: var(--color-primary-pale);
   box-shadow: rgba(56, 66, 85, 0.5) 0px 75px 100px -50px;
 
+  @media only screen and (max-width: 1000px) {
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+  }
+
   & > *:not(:last-child) {
     margin-bottom: 2rem;
   }
