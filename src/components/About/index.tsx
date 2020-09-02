@@ -14,6 +14,12 @@ const AboutWrapper = styled.section`
     max-width: 50rem;
     box-shadow: rgba(56, 66, 85, 0.5) 0px 75px 100px -50px;
     z-index: 998;
+
+    @media only screen and (max-width: 900px) {
+      max-width: 40rem;
+      order: -1;
+      margin-bottom: 5rem !important;
+    }
   }
 
   .about-food {
@@ -23,7 +29,11 @@ const AboutWrapper = styled.section`
     flex-wrap: wrap;
 
     > * {
-      margin: 0 8rem;
+      margin: 0 9rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+      text-align: center;
     }
   }
 
@@ -34,7 +44,7 @@ const AboutWrapper = styled.section`
     flex-wrap: wrap;
 
     > * {
-      margin: 0 8rem;
+      margin: 0 9rem;
     }
   }
 

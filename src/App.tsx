@@ -1,6 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import { Router } from '@reach/router';
+import { Router, Redirect } from '@reach/router';
 import Home from './pages/Home';
 import Booking from './pages/Booking';
 
@@ -24,6 +24,14 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     font-family: "Lato", sans-serif;
     text-rendering: optimizeLegibility;
+
+    @media only screen and (max-width: 1300px){
+      font-size: 50%;
+    }
+
+    @media only screen and (max-width: 900px){
+      font-size: 50%;
+    }
   }
   body {
     line-height: 1.7;
@@ -39,6 +47,7 @@ function App() {
       <Router>
         <Home path="/" />
         <Booking path="booking" />
+        <Redirect from="/" to="/" default noThrow />
       </Router>
     </div>
   );

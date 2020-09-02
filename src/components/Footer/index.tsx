@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   background-color: var(--color-primary-dark);
   color: white;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(43rem, max-content));
+  grid-gap: 11rem;
 
   h1 {
     font-size: 6.4rem;
@@ -16,17 +18,12 @@ const FooterWrapper = styled.footer`
   h3 {
     font-size: 1.5rem;
   }
-
-  & > h1,
-  & > div {
-    flex: 0 0 28%;
-  }
 `;
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      <h1>Madeleine's</h1>
+      <h1>Madeleine's Cafe</h1>
       <div>
         <h3>MARTHWAITE, SEDBERGH</h3>
         <h3>CUMBRIA</h3>

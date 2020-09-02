@@ -12,10 +12,6 @@ const BookingContainer = styled.div`
   margin: 0;
   position: relative;
 
-  .bg-video {
-    top: -30rem;
-  }
-
   .clear-main {
     background-color: var(--color-primary-pale);
   }
@@ -29,12 +25,14 @@ const Booking: React.FC<RouteComponentProps> = () => {
   return (
     <BookingContainer>
       <Header type="1">
-        <video className="bg-video" autoPlay muted loop>
-          <source src={cafeVideo2} type="video/mp4"></source>
-          Your browser does not support the video tag.
-        </video>
+        <div className="bg-video">
+          <video className="bg-video__content" autoPlay muted loop>
+            <source src={cafeVideo2} type="video/mp4"></source>
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div className="container div-booking">
-          <h1 className="title">Madeleine's</h1>
+          <h1 className="title">Madeleine's Cafe</h1>
           <h1>Reservations</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae

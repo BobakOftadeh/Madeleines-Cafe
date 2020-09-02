@@ -7,6 +7,10 @@ import styled from 'styled-components';
 const ContentWrapper = styled.main`
   display: grid;
   grid-template-rows: 180vh 60vh 30vh;
+
+  @media only screen and (max-width: 1300px) {
+    grid-template-rows: 150vh 60vh 30vh;
+  }
 `;
 
 const Content = () => {

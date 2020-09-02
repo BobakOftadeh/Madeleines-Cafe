@@ -9,18 +9,24 @@ import cafeVideo from '../../images/cafeVideo1.mp4';
 const HomeContainer = styled.div`
   display: grid;
   grid-template-rows: 75vh 270vh 20vh;
+
+  @media only screen and (max-width: 1300px) {
+    grid-template-rows: 60vh 240vh 20vh;
+  }
 `;
 
 const Home: React.FC<RouteComponentProps> = (props) => {
   return (
     <HomeContainer>
       <Header type="1">
-        <video className="bg-video" autoPlay muted loop>
-          <source src={cafeVideo} type="video/mp4"></source>
-          Your browser does not support the video tag.
-        </video>
+        <div className="bg-video">
+          <video className="bg-video__content" autoPlay muted loop>
+            <source src={cafeVideo} type="video/mp4"></source>
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div className="container">
-          <h1 className="title">Madeleine's</h1>
+          <h1 className="title">Madeleine's Cafe</h1>
           <h1>Exquisite dining since 1994</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae

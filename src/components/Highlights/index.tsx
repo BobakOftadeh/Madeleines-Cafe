@@ -8,11 +8,16 @@ const HighlightsWrapper = styled.section`
   grid-template-columns: repeat(auto-fit, minmax(43rem, 55rem));
   place-content: center;
 
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: repeat(900px, minmax(43rem, 55rem));
+    place-items: center;
+  }
+
   .photo {
     width: 100%;
-    max-width: 12rem;
+    height: 10rem;
+    max-width: 15rem;
     margin-right: 3rem;
-    height: auto;
   }
 
   h2 {
@@ -30,12 +35,12 @@ const HighlightsWrapper = styled.section`
   }
 
   h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   p {
     width: 30rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .Highlight-title-container-p {
@@ -47,7 +52,7 @@ const HighlightsWrapper = styled.section`
     display: flex;
 
     &:not(:last-child) {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
       margin-bottom: 2rem;
       border-bottom: 1px solid var(--color-primary-pale);
     }
@@ -59,6 +64,15 @@ const HighlightsWrapper = styled.section`
 
   .Highlight-title-container {
     margin-bottom: 14rem;
+
+    @media only screen and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
   }
 `;
 
@@ -76,42 +90,42 @@ const Highlights = () => {
         <div className="Highlight-Food-contianer">
           <img
             src={require('../../images/coffee.jpg')}
-            alt="food plate"
+            alt="Coffee"
             className="photo"
           />
           <span>
             <h4>Coffee</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
-              incidunt, assumenda impedit.
+              incidunt.
             </p>
           </span>
         </div>
         <div className="Highlight-Food-contianer">
           <img
-            src={require('../../images/coffee.jpg')}
-            alt="food plate"
+            src={require('../../images/food1.jpg')}
+            alt="Egg Sandwich"
             className="photo"
           />
           <span>
-            <h4>Coffee</h4>
+            <h4>Egg Sandwich</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
-              incidunt, assumenda impedit.
+              incidunt.
             </p>
           </span>
         </div>
         <div className="Highlight-Food-contianer">
           <img
-            src={require('../../images/coffee.jpg')}
-            alt="food plate"
+            src={require('../../images/food2.jpg')}
+            alt="Pancakes with nuts"
             className="photo"
           />
           <span>
-            <h4>Coffee</h4>
+            <h4>French Pancakes</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
-              incidunt, assumenda impedit.
+              incidunt.
             </p>
           </span>
         </div>
