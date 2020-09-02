@@ -16,6 +16,11 @@ const HeaderWrapper = styled.header`
     margin-left: 25rem;
     height: 100%;
     justify-content: center;
+
+    @media only screen and (max-width: 900px) {
+      align-items: center;
+      margin-left: 2rem;
+    }
   }
 
   .bg-video {
@@ -48,11 +53,27 @@ const HeaderWrapper = styled.header`
     margin-bottom: 2rem;
   }
 
+  h2 {
+    font-size: 6.4rem;
+    font-weight: 300;
+    width: 50rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 900px) {
+      width: auto;
+    }
+  }
+
   p {
     display: inline-block;
     font-size: 1.8rem;
     width: 40rem;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: 900px) {
+      text-align: center;
+    }
   }
 
   a {

@@ -13,18 +13,19 @@ const ReservationsWrapper = styled.section`
   background-position: center;
   background-attachment: fixed;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(43rem, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(53rem, max-content));
   grid-gap: 14rem;
   place-content: center;
   place-items: center;
+
+  @media only screen and (max-width: 900px) {
+    grid-gap: 4rem;
+  }
 
   h3 {
     color: white;
     text-align: center;
     font-size: 4rem;
-  }
-
-  div {
   }
 
   a {
