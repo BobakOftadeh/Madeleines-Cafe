@@ -21,6 +21,10 @@ const HeaderWrapper = styled.header`
       align-items: center;
       margin-left: 2rem;
     }
+
+    @media only screen and (max-width: 420px) {
+      margin-left: 0;
+    }
   }
 
   .bg-video {

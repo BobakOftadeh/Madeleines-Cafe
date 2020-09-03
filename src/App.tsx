@@ -38,6 +38,9 @@ const GlobalStyle = createGlobalStyle`
       font-size: 50%;
     }
 
+    @media only screen and (max-width: 500px){
+      font-size: 40%;
+    }
    
   }
   body {

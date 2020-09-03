@@ -11,7 +11,7 @@ const HomeContainer = styled.div`
   display: grid;
   grid-template-rows: 75vh 280vh 20vh;
 
-  @media only screen and (max-width: 1300px) {
+  @media only screen and (max-width: 1100px) {
     grid-template-rows: 60vh 250vh 50vh;
   }
 `;

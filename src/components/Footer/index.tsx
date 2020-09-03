@@ -17,16 +17,11 @@ const FooterWrapper = styled.footer`
 
   @media only screen and (max-width: 1000px) {
     grid-template-columns: auto;
-    grid-gap: 5rem;
+    grid-gap: 6rem;
 
     & > div {
       text-align: center;
     }
-  }
-
-  h1 {
-    font-size: 6.4rem;
-    font-weight: 400;
   }
 
   h3 {

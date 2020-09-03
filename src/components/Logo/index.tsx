@@ -27,6 +27,12 @@ const LogoWrapper = styled.div`
     @media only screen and (max-width: 1000px) {
       margin-bottom: 6rem;
     }
+
+    @media only screen and (max-width: 500px) {
+      margin-bottom: 3rem;
+      font-size: 5.4rem;
+      width: 35rem;
+    }
   }
 
   a {
@@ -60,6 +66,10 @@ const LogoWrapper = styled.div`
   @media only screen and (max-width: 1000px) {
     display: flex;
     align-items: center;
+    width: auto;
+  }
+
+  @media only screen and (max-width: 420px) {
     width: auto;
   }
 `;

@@ -14,9 +14,10 @@ const BookingContainer = styled.div`
     grid-template-rows: 65vh 35vh 50vh;
   }
 
-  @media only screen and (max-width: 500px) {
-    grid-template-rows: 65vh 35vh 60vh;
+  @media only screen and (max-width: 420px) {
+    grid-template-rows: 80vh 35vh 75vh;
   }
+
   margin: 0;
   position: relative;
 
