@@ -41,6 +41,10 @@ const GlobalStyle = createGlobalStyle`
     @media only screen and (max-width: 500px){
       font-size: 40%;
     }
+
+    @media only screen and (max-width: 400px){
+      font-size: 35%;
+    }
    
   }
   body {
