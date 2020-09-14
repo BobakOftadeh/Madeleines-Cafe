@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/Madeleines-Cafe/static/js/main.51dab2c6.chunk.js",
+    "main.js.map": "/Madeleines-Cafe/static/js/main.51dab2c6.chunk.js.map",
+    "runtime-main.js": "/Madeleines-Cafe/static/js/runtime-main.ef58f6c1.js",
+    "runtime-main.js.map": "/Madeleines-Cafe/static/js/runtime-main.ef58f6c1.js.map",
+    "static/js/2.e3ae5780.chunk.js": "/Madeleines-Cafe/static/js/2.e3ae5780.chunk.js",
+    "static/js/2.e3ae5780.chunk.js.map": "/Madeleines-Cafe/static/js/2.e3ae5780.chunk.js.map",
+    "index.html": "/Madeleines-Cafe/index.html",
+    "precache-manifest.41caf001342692ec7e8efe3261b8013f.js": "/Madeleines-Cafe/precache-manifest.41caf001342692ec7e8efe3261b8013f.js",
+    "service-worker.js": "/Madeleines-Cafe/service-worker.js",
+    "static/js/2.e3ae5780.chunk.js.LICENSE.txt": "/Madeleines-Cafe/static/js/2.e3ae5780.chunk.js.LICENSE.txt",
+    "static/media/cafe1.jpg": "/Madeleines-Cafe/static/media/cafe1.aab3cc8a.jpg",
+    "static/media/cafe2.jpg": "/Madeleines-Cafe/static/media/cafe2.370914ef.jpg",
+    "static/media/cafe3.jpg": "/Madeleines-Cafe/static/media/cafe3.21f85284.jpg",
+    "static/media/cafeVideo1.mp4": "/Madeleines-Cafe/static/media/cafeVideo1.6d7ab9fd.mp4",
+    "static/media/cafeVideo2.mp4": "/Madeleines-Cafe/static/media/cafeVideo2.7887e3e7.mp4",
+    "static/media/coffee.jpg": "/Madeleines-Cafe/static/media/coffee.8b8a7b4b.jpg",
+    "static/media/food1.jpg": "/Madeleines-Cafe/static/media/food1.a54490a5.jpg",
+    "static/media/food2.jpg": "/Madeleines-Cafe/static/media/food2.44c5ed15.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef58f6c1.js",
+    "static/js/2.e3ae5780.chunk.js",
+    "static/js/main.51dab2c6.chunk.js"
+  ]
+}
