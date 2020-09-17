@@ -12,7 +12,7 @@ const ReservationsWrapper = styled.section`
   background-position: center;
   background-attachment: fixed;
   display: grid;
-  padding: 8rem;
+  padding: 10rem;
   grid-template-columns: repeat(auto-fit, minmax(53rem, max-content));
   grid-gap: 14rem;
   place-content: center;
