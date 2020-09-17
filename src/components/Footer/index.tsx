@@ -10,6 +10,7 @@ const FooterWrapper = styled.footer`
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(43rem, max-content));
   grid-gap: 11rem;
+  padding: 4rem;
 
   @media only screen and (max-width: 1400px) {
     grid-gap: 0;

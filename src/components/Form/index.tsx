@@ -8,7 +8,7 @@ const FormWarpper = styled.form`
   left: 55%;
   width: 50rem;
   font-size: 2rem;
-  color: #111111;
+  color: var(--color-primary-dark);
   display: flex;
   flex-direction: column;
   background-color: var(--color-primary-pale);
@@ -103,7 +103,7 @@ const FormWarpper = styled.form`
   .form-button-reservation {
     padding: 1rem 0;
     text-decoration: none;
-    color: black;
+    color: var(--color-primary-dark);
     text-align: center;
     font-family: inherit;
     font-size: 1.5rem;
@@ -116,7 +116,7 @@ const FormWarpper = styled.form`
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-      background-color: black;
+      background-color: var(--color-primary-dark);
       color: white;
       border: 0.2rem solid white;
     }

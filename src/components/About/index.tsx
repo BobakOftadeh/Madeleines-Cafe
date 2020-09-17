@@ -6,13 +6,14 @@ const AboutWrapper = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 5rem;
+  color: var(--color-primary-dark);
 
   .photo {
     display: block;
-    box-shadow: 0 1.5rem 4rem rgba(var(--color-black), 0.4);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 100%;
     max-width: 50rem;
-    box-shadow: rgba(56, 66, 85, 0.5) 0px 75px 100px -50px;
     z-index: 998;
 
     @media only screen and (max-width: 1200px) {

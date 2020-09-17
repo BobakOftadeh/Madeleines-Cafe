@@ -44,7 +44,7 @@ const HeaderWrapper = styled.header`
   }
 
   h2 {
-    font-size: 6.4rem;
+    font-size: 5rem;
     font-weight: 300;
     width: 50rem;
     line-height: 6rem;

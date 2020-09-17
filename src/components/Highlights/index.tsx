@@ -7,6 +7,7 @@ const HighlightsWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(43rem, 55rem));
   place-content: center;
+  padding: 7rem;
 
   @media only screen and (max-width: 1200px) {
     grid-template-columns: repeat(900px, minmax(150rem, max-content));
