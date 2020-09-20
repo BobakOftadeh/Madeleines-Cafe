@@ -21,7 +21,7 @@ const HomeContainer = styled.div`
 const Home: React.FC<RouteComponentProps> = (props) => {
   return (
     <HomeContainer>
-      <Header type="1">
+      <Header>
         <div className="bg-video">
           <video className="bg-video__content" autoPlay muted loop>
             <source src={cafeVideo} type="video/mp4"></source>

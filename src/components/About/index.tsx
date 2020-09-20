@@ -13,14 +13,7 @@ const AboutWrapper = styled.section`
     display: block;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 100%;
-    max-width: 50rem;
     z-index: 998;
-
-    @media only screen and (max-width: 1200px) {
-      max-width: 40rem;
-      order: -1;
-      margin-bottom: 5rem !important;
-    }
   }
 
   .about-food {
@@ -79,15 +72,28 @@ const AboutWrapper = styled.section`
   }
 `;
 
+const PhotoContainer = styled.div`
+  width: 50rem;
+
+  @media only screen and (max-width: 1200px) {
+    max-width: 40rem;
+    order: -1;
+    margin-bottom: 5rem !important;
+    margin-top: 5rem !important;
+  }
+`;
+
 const About = () => {
   return (
     <AboutWrapper>
       <div className="about-food">
-        <img
-          src={require('../../images/cafe1.jpg')}
-          alt="food plate"
-          className="photo"
-        />
+        <PhotoContainer>
+          <img
+            src={require('../../images/cafe1.jpg')}
+            alt="food plate"
+            className="photo"
+          />
+        </PhotoContainer>
         <div>
           <h2>Enjoyable place for all the family</h2>
           <p>
@@ -106,11 +112,13 @@ const About = () => {
             maiores
           </p>
         </div>
-        <img
-          src={require('../../images/cafe3.jpg')}
-          alt="food plate"
-          className="photo"
-        />
+        <PhotoContainer>
+          <img
+            src={require('../../images/cafe3.jpg')}
+            alt="food plate"
+            className="photo"
+          />
+        </PhotoContainer>
       </div>
     </AboutWrapper>
   );

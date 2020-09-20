@@ -89,6 +89,8 @@ const HeaderWrapper = styled.header`
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      background-color: var(--color-primary-dark);
+      border: 0.2rem solid var(--color-primary-dark);
     }
 
     &:active {
@@ -99,20 +101,18 @@ const HeaderWrapper = styled.header`
     @media only screen and (max-width: 1000px) {
       margin-bottom: 0;
     }
+    @media only screen and (max-width: 600px) {
+      width: 26rem;
+    }
   }
 `;
 
 interface MyProps {
   children?: React.ReactNode;
-  type?: string;
 }
 
 const Header: React.FC<MyProps> = (props) => {
-  if (props.type === '1') {
-    return <HeaderWrapper>{props.children}</HeaderWrapper>;
-  } else {
-    return <header>{props.children}</header>;
-  }
+  return <HeaderWrapper>{props.children}</HeaderWrapper>;
 };
 
 export default Header;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Router, RouteComponentProps, Link } from '@reach/router';
+import { RouteComponentProps, Link } from '@reach/router';
 import Header from '../../components/Header';
 import Logo from '../../components/Logo';
 import Form from '../../components/Form';
@@ -9,13 +9,13 @@ import cafeVideo2 from '../../images/cafeVideo2.mp4';
 
 const BookingContainer = styled.div`
   display: grid;
-  grid-template-rows: 65vh 35vh 20vh;
+  grid-template-rows: 75vh 35vh min-content;
   @media only screen and (max-width: 1300px) {
-    grid-template-rows: 65vh 35vh 50vh;
+    grid-template-rows: 65vh 35vh min-content;
   }
 
   @media only screen and (max-width: 420px) {
-    grid-template-rows: 80vh 35vh 75vh;
+    grid-template-rows: 70vh 35vh min-content;
   }
 
   margin: 0;
@@ -24,23 +24,19 @@ const BookingContainer = styled.div`
   .clear-main {
     background-color: var(--color-primary-pale);
   }
-
-  .div-booking {
-    padding-bottom: 15.5rem;
-  }
 `;
 
 const Booking: React.FC<RouteComponentProps> = () => {
   return (
     <BookingContainer>
-      <Header type="1">
+      <Header>
         <div className="bg-video">
           <video className="bg-video__content" autoPlay muted loop>
             <source src={cafeVideo2} type="video/mp4"></source>
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="container div-booking">
+        <div className="container">
           <Logo />
           <h2>Reservations</h2>
           <p>
@@ -48,6 +44,7 @@ const Booking: React.FC<RouteComponentProps> = () => {
             repellat praesentium optio incidunt sed molestiae dolore sint
             maiores
           </p>
+          <Link to="booking">Go Back</Link>
         </div>
         <Form />
       </Header>

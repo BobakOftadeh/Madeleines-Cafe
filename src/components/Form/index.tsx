@@ -29,7 +29,6 @@ const FormWarpper = styled.form`
   }
 
   button {
-    outline: none;
     border: none;
   }
 
@@ -44,7 +43,6 @@ const FormWarpper = styled.form`
 
     &:focus,
     &:hover {
-      outline: none;
       border-bottom: 1px solid rgba(0, 0, 0, 1);
       &::placeholder {
         color: black;
@@ -52,7 +50,6 @@ const FormWarpper = styled.form`
     }
 
     &:active {
-      outline: none;
     }
   }
 
@@ -69,6 +66,7 @@ const FormWarpper = styled.form`
       font-size: inherit;
       transition: all 0.25s;
       backface-visibility: hidden;
+      background-color: inherit;
       outline: none;
       &:hover {
         transform: scale(1.4);
@@ -110,7 +108,7 @@ const FormWarpper = styled.form`
     border-radius: 1rem;
     height: 5rem;
     width: 100%;
-    border: 0.2rem solid black;
+    border: 0.2rem solid var(--color-primary-dark);
     transition: all 0.2s;
 
     &:hover {

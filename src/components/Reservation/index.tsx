@@ -44,6 +44,8 @@ const ReservationsWrapper = styled.section`
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      background-color: var(--color-primary-dark);
+      border: 0.2rem solid var(--color-primary-dark);
     }
 
     &:active {
