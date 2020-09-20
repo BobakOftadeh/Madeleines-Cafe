@@ -21,6 +21,7 @@ const FormWarpper = styled.form`
   }
 
   @media only screen and (max-width: 500px) {
+    top: 122%;
     width: 100%;
   }
 
