@@ -56,6 +56,15 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--color-primary-pale);
   }
   
+  p,
+ li,
+ h1,
+ h2,
+ h3,
+ h4 {
+  word-break: break-word;
+  hyphens: auto;
+ }
 `;
 
 function App() {

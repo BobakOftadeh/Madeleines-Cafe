@@ -4,6 +4,7 @@ import { RouteComponentProps, Link } from '@reach/router';
 import Header from '../../components/Header';
 import About from '../../components/About';
 import Highlights from '../../components/Highlights';
+import Button from '../../components/Button';
 import Reservation from '../../components/Reservation';
 import Footer from '../../components/Footer';
 import Logo from '../../components/Logo';
@@ -36,7 +37,7 @@ const Home: React.FC<RouteComponentProps> = (props) => {
             repellat praesentium optio incidunt sed molestiae dolore sint
             maiores
           </p>
-          <Link to="booking">Book A Table</Link>
+          <Button>Book A Table</Button>
         </div>
       </Header>
       <About />

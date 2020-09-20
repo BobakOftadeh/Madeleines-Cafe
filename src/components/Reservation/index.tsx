@@ -12,7 +12,7 @@ const ReservationsWrapper = styled.section`
   background-position: center;
   background-attachment: fixed;
   display: grid;
-  padding: 10rem;
+  padding: 15rem;
   grid-template-columns: repeat(auto-fit, minmax(53rem, max-content));
   grid-gap: 14rem;
   place-content: center;
@@ -20,6 +20,10 @@ const ReservationsWrapper = styled.section`
 
   @media only screen and (max-width: 1000px) {
     grid-gap: 4rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    background-position: right bottom;
   }
 
   h3 {

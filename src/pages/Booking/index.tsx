@@ -4,6 +4,7 @@ import { RouteComponentProps, Link } from '@reach/router';
 import Header from '../../components/Header';
 import Logo from '../../components/Logo';
 import Form from '../../components/Form';
+import Button from '../../components/Button';
 import Footer from '../../components/Footer';
 import cafeVideo2 from '../../images/cafeVideo2.mp4';
 
@@ -44,7 +45,7 @@ const Booking: React.FC<RouteComponentProps> = () => {
             repellat praesentium optio incidunt sed molestiae dolore sint
             maiores
           </p>
-          <Link to="booking">Go Back</Link>
+          <Button>Go Back</Button>
         </div>
         <Form />
       </Header>

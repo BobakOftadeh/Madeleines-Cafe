@@ -40,6 +40,7 @@ const FormWarpper = styled.form`
     background-color: inherit;
     transition: all 1s;
     font-size: inherit;
+    min-width: 0;
 
     &:focus,
     &:hover {
@@ -86,6 +87,7 @@ const FormWarpper = styled.form`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 
     & > * {
       flex: 0 0 20%;
@@ -102,6 +104,7 @@ const FormWarpper = styled.form`
     padding: 1rem 0;
     text-decoration: none;
     color: var(--color-primary-dark);
+    background-color: var(--color-primary-pale);
     text-align: center;
     font-family: inherit;
     font-size: 1.5rem;

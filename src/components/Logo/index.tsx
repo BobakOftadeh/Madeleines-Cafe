@@ -31,7 +31,7 @@ const LogoWrapper = styled.div`
     @media only screen and (max-width: 500px) {
       margin-bottom: 3rem;
       font-size: 5.4rem;
-      width: 35rem;
+      width: 100%;
     }
   }
 
