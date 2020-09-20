@@ -1,31 +1,12 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { RouteComponentProps, Link } from '@reach/router';
+import React from 'react';
+import { BookingContainer } from './style';
+import { RouteComponentProps } from '@reach/router';
 import Header from '../../components/Header';
 import Logo from '../../components/Logo';
 import Form from '../../components/Form';
 import Button from '../../components/Button';
 import Footer from '../../components/Footer';
 import cafeVideo2 from '../../images/cafeVideo2.mp4';
-
-const BookingContainer = styled.div`
-  display: grid;
-  grid-template-rows: 75vh 35vh min-content;
-  @media only screen and (max-width: 1300px) {
-    grid-template-rows: 65vh 35vh min-content;
-  }
-
-  @media only screen and (max-width: 420px) {
-    grid-template-rows: 70vh 35vh min-content;
-  }
-
-  margin: 0;
-  position: relative;
-
-  .clear-main {
-    background-color: var(--color-primary-pale);
-  }
-`;
 
 const Booking: React.FC<RouteComponentProps> = () => {
   return (

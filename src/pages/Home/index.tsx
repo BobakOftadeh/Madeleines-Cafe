@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import { RouteComponentProps, Link } from '@reach/router';
+import { HomeContainer } from './style';
+import { RouteComponentProps } from '@reach/router';
 import Header from '../../components/Header';
 import About from '../../components/About';
 import Highlights from '../../components/Highlights';
@@ -9,15 +9,6 @@ import Reservation from '../../components/Reservation';
 import Footer from '../../components/Footer';
 import Logo from '../../components/Logo';
 import cafeVideo from '../../images/cafeVideo1.mp4';
-
-const HomeContainer = styled.div`
-  display: grid;
-  grid-template-rows: 75vh repeat(4, min-content);
-
-  @media only screen and (max-width: 1100px) {
-    grid-template-rows: 60vh repeat(4, min-content);
-  }
-`;
 
 const Home: React.FC<RouteComponentProps> = (props) => {
   return (
