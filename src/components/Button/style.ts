@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { Link } from '@reach/router';
 
 export const ButtonWrapper = styled(Link)`
-  padding: 1.5rem 0;
+  display: grid;
+  place-items: center;
   text-decoration: none;
   color: white;
-  text-align: center;
   font-size: 1.8rem;
   border-radius: 1rem;
   height: 6rem;
@@ -30,6 +30,7 @@ export const ButtonWrapper = styled(Link)`
     margin-bottom: 0;
   }
   @media only screen and (max-width: 600px) {
+    font-size: 2.2rem;
     width: 26rem;
   }
 `;

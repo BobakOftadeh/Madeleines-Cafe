@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media only screen and (max-width: 450px){
-      font-size: 35%;
+      font-size: 30%;
     }
 
     @media only screen and (max-width: 400px){

@@ -42,7 +42,7 @@ export const HeaderWrapper = styled.header`
   }
 
   h2 {
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-weight: 300;
     width: 50rem;
     line-height: 6rem;

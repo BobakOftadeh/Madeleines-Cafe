@@ -35,22 +35,6 @@ export const AboutWrapper = styled.section`
   }
 
   .about-resturant {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    > * {
-      margin: 0 9rem;
-    }
-
-    @media only screen and (max-width: 1200px) {
-      text-align: center;
-      flex-direction: column;
-      > * {
-        margin: 0;
-      }
-    }
   }
 
   h2 {
@@ -79,5 +63,24 @@ export const PhotoContainer = styled.div`
     order: -1;
     margin-bottom: 5rem !important;
     margin-top: 5rem !important;
+  }
+`;
+
+export const AboutContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  > * {
+    margin: 0 9rem;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    text-align: center;
+    flex-direction: column;
+    > * {
+      margin: 0;
+    }
   }
 `;

@@ -1,10 +1,10 @@
 import React from 'react';
-import { AboutWrapper, PhotoContainer } from './style';
+import { AboutWrapper, AboutContainer, PhotoContainer } from './style';
 
 const About: React.FC = () => {
   return (
     <AboutWrapper>
-      <div className="about-food">
+      <AboutContainer>
         <PhotoContainer>
           <img
             src={require('../../images/cafe1.jpg')}
@@ -20,8 +20,8 @@ const About: React.FC = () => {
             maiores
           </p>
         </div>
-      </div>
-      <div className="about-resturant">
+      </AboutContainer>
+      <AboutContainer>
         <div>
           <h2>The most locally sourced food</h2>
           <p>
@@ -37,7 +37,7 @@ const About: React.FC = () => {
             className="photo"
           />
         </PhotoContainer>
-      </div>
+      </AboutContainer>
     </AboutWrapper>
   );
 };
