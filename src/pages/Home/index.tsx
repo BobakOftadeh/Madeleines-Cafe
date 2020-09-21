@@ -22,7 +22,7 @@ const Home: React.FC<RouteComponentProps> = (props) => {
         </div>
         <div className="container">
           <Logo />
-          <h2>Exquisite dining since 1994</h2>
+          <h2>Exquisite Dining Since 1994</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
             repellat praesentium optio incidunt sed molestiae dolore sint

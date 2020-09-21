@@ -90,7 +90,7 @@ const Form: React.FC = () => {
           +
         </button>
       </div>
-      <button className="form-button-reservation">MAKE RESERVATION</button>
+      <button className="form-button-reservation">Make Rreservation</button>
     </FormWarpper>
   );
 };

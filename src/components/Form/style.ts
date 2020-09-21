@@ -107,7 +107,7 @@ export const FormWarpper = styled.form`
     background-color: var(--color-primary-pale);
     text-align: center;
     font-family: inherit;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     border-radius: 1rem;
     height: 5rem;
     width: 100%;

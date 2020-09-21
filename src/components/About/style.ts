@@ -14,29 +14,6 @@ export const AboutWrapper = styled.section`
     width: 100%;
     z-index: 998;
   }
-
-  .about-food {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    > * {
-      margin: 0 9rem;
-    }
-
-    @media only screen and (max-width: 1200px) {
-      text-align: center;
-      flex-direction: column;
-      > * {
-        margin: 0;
-      }
-    }
-  }
-
-  .about-resturant {
-  }
-
   h2 {
     font-size: 4rem;
     font-weight: 700;
@@ -50,6 +27,7 @@ export const AboutWrapper = styled.section`
   }
 
   p {
+    display: inline-block;
     font-size: 1.8rem;
     width: 40rem;
   }
