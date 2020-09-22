@@ -8,7 +8,7 @@ const About: React.FC = () => {
         <PhotoContainer>
           <img
             src={require('../../images/cafe1.jpg')}
-            alt="food plate"
+            alt="coffee blends"
             className="photo"
           />
         </PhotoContainer>
@@ -33,7 +33,7 @@ const About: React.FC = () => {
         <PhotoContainer>
           <img
             src={require('../../images/cafe3.jpg')}
-            alt="food plate"
+            alt="cafe view"
             className="photo"
           />
         </PhotoContainer>

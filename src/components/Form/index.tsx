@@ -86,7 +86,7 @@ const Form: React.FC = () => {
           -
         </button>
         <span>{person} people</span>
-        <button type="button" onClick={incrementPerson}>
+        <button type="button" onClick={incrementPerson} role="increment">
           +
         </button>
       </div>
