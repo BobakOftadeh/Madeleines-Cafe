@@ -74,6 +74,7 @@ function App() {
       <Router>
         <Home path="/" />
         <Booking path="booking" />
+        <Redirect from="/" to="/" default noThrow />
       </Router>
     </div>
   );
