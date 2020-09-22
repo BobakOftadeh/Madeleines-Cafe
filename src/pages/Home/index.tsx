@@ -28,7 +28,7 @@ const Home: React.FC<RouteComponentProps> = (props) => {
             repellat praesentium optio incidunt sed molestiae dolore sint
             maiores
           </p>
-          <Button>Book A Table</Button>
+          <Button route="booking">Book A Table</Button>
         </div>
       </Header>
       <About />

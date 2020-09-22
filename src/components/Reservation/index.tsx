@@ -6,7 +6,7 @@ const Reservations: React.FC = () => {
   return (
     <ReservationsWrapper>
       <h3>Ready to make a Reservation?</h3>
-      <Button>Book A Table</Button>
+      <Button route="booking">Book A Table</Button>
     </ReservationsWrapper>
   );
 };

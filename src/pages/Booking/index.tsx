@@ -26,7 +26,7 @@ const Booking: React.FC<RouteComponentProps> = () => {
             repellat praesentium optio incidunt sed molestiae dolore sint
             maiores
           </p>
-          <Button>Go Back</Button>
+          <Button route="/">Go Back</Button>
         </div>
         <Form />
       </Header>
