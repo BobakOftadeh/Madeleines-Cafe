@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "07e167fd77f43d1bacaf5319513f2931",
+    "revision": "4258d655691beada03f989871d42353f",
     "url": "/Madeleines-Cafe/index.html"
   },
   {
