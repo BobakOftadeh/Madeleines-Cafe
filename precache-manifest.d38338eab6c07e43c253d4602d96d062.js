@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0015beeb5a1bdf1d23bf3360cbf224b3",
+    "revision": "8219af6534a7ba3f0ca3f27a7c4dbd71",
     "url": "/Madeleines-Cafe/index.html"
   },
   {
-    "revision": "afb894ac043a51d83fad",
-    "url": "/Madeleines-Cafe/static/js/2.e3ae5780.chunk.js"
+    "revision": "617b667a553ff13be095",
+    "url": "/Madeleines-Cafe/static/js/2.3dbae9d8.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Madeleines-Cafe/static/js/2.e3ae5780.chunk.js.LICENSE.txt"
+    "url": "/Madeleines-Cafe/static/js/2.3dbae9d8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d67bea9ea093fb244917",
-    "url": "/Madeleines-Cafe/static/js/main.7bdf2cb6.chunk.js"
+    "revision": "09cd60908ee32172b3bb",
+    "url": "/Madeleines-Cafe/static/js/main.5ac622e1.chunk.js"
   },
   {
     "revision": "a2406072b457464024bd",
