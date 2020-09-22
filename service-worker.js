@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Madeleines-Cafe/precache-manifest.d38338eab6c07e43c253d4602d96d062.js"
+  "/Madeleines-Cafe/precache-manifest.a2fded29951068b31002a309466768bf.js"
 );
 
 self.addEventListener('message', (event) => {
