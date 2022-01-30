@@ -4,4 +4,4 @@ A restaurant website built using React and TypeScript that displays information 
 
 ![Alt text](repo-assets/restaurant.png 'restaurant')
 
-### [Click Here To See A Demo](https://bobakoftadeh.me/Madeleines-Cafe/)
+### [Click Here To See A Demo](https://bobakoftadeh.github.io/Madeleines-Cafe/)
